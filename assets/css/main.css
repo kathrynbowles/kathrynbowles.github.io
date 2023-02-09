@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 @import url("fontawesome-all.min.css");
 
+:root {
+	--primary-color: #3d84a8;
+  --primary-fade: #5cc5fd;
+  --primary-dark: #14303e;
+}
+
 /*
 	Helios by HTML5 UP
 	html5up.net | @ajlkn
@@ -149,7 +155,7 @@ input, select, textarea {
 
 	a {
 		color: inherit;
-		border-bottom: solid 1px rgba(128, 128, 128, 0.15);
+		/* border-bottom: solid 1px rgba(128, 128, 128, 0.15); */
 		text-decoration: none;
 		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -158,7 +164,8 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #ef8376;
+			color: var(--primary-fade);
+			/* color: #ef8376; */
 			border-bottom-color: transparent;
 		}
 
@@ -1935,7 +1942,8 @@ input, select, textarea {
 			}
 
 				ul.icons li a:hover {
-					color: #ef8376;
+					/* color: #ef8376; */
+					color: var(--primary-fade);
 				}
 
 /* Form */
@@ -1972,7 +1980,8 @@ input, select, textarea {
 		form select:focus,
 		form textarea:focus {
 			background: #fff;
-			border-color: #df7366;
+			border-color: var(--primary-color);
+			/* border-color: #df7366; */
 		}
 
 	form input[type="text"],
@@ -2055,7 +2064,8 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #df7366;
+		background: var(--primary-color);
+		/* background: #df7366; */
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
@@ -2077,7 +2087,8 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			color: #fff;
-			background: #ef8376;
+			/* background: #ef8376; */
+			background: var(--primary-fade);
 		}
 
 		input[type="button"].alt,
@@ -2224,9 +2235,9 @@ input, select, textarea {
 		#header .button {
 			display: inline-block;
 			border-radius: 100%;
-			width: 4.5em;
-			height: 4.5em;
-			line-height: 4.5em;
+			width: 2.5em;
+			height: 2.5em;
+			line-height: 2.5em;
 			text-align: center;
 			font-size: 1.25em;
 			padding: 0;
@@ -2259,6 +2270,7 @@ input, select, textarea {
 		body.homepage #header:after {
 			content: '';
 			background: #1C0920;
+			/* background: var(--primary-dark); */
 			display: block;
 			position: absolute;
 			left: 0;
@@ -2266,14 +2278,14 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			opacity: 0;
-			-moz-transition: opacity 2.5s ease-in-out;
-			-webkit-transition: opacity 2.5s ease-in-out;
-			-ms-transition: opacity 2.5s ease-in-out;
-			transition: opacity 2.5s ease-in-out;
-			-moz-transition-delay: 0.5s;
+			-moz-transition: opacity 1.5s ease-in-out;
+			-webkit-transition: opacity 1.5s ease-in-out;
+			-ms-transition: opacity 1.5s ease-in-out;
+			transition: opacity 1.5s ease-in-out;
+			/* -moz-transition-delay: 0.5s;
 			-webkit-transition-delay: 0.5s;
 			-ms-transition-delay: 0.5s;
-			transition-delay: 0.5s;
+			transition-delay: 0.5s; */
 		}
 
 	body.homepage.is-preload #header:after {
@@ -2377,7 +2389,8 @@ input, select, textarea {
 			}
 
 			.dropotron li:hover {
-				color: #ef8376;
+				color: var(--primary-fade);
+				/* color: #ef8376; */
 			}
 
 			.dropotron li a, .dropotron li span {
